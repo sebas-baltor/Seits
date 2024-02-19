@@ -12,6 +12,9 @@ export default {
         'pink_init': '#C958C8',
         'yellow_init': '#F29F62',
         'transparent' : "#ffffff00"
+      },
+      fontFamily:{
+        poppins: ["Poppins","sans-serif"]
       }
     },
   },

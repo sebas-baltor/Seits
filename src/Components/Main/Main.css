@@ -1,9 +1,0 @@
-.glass {
-    background: linear-gradient(140deg, hsla(0, 0%, 100%, 0.219) 10%, rgba(255, 255, 255, 0.100) 90%);
-    backdrop-filter: blur(8px)
-}
-
-.hover:hover {
-    background: linear-gradient(140deg, hsla(0, 0%, 100%, 0.400) 10%, rgba(255, 255, 255, 0.1) 90%);
-    backdrop-filter: blur(8px)
-}

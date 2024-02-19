@@ -2,20 +2,25 @@
 import images from "../../constants/images";
 const Navbar = () => {
   return (
-    <div className="flex  bg-transparent absolute size-full h-20  z-20 text-white px-5  ">
-      <div className="flex size-full justify-between m-auto max-w-7xl">
-        <div className="flex gap-2.5 items-center h-5 self-center">
-          <a href="">
-            <img className="w-11" src={images.Logo} alt="" />
-          </a>
-        </div>
-        <div className="flex gap-6 items-center h-5 self-center ">
+    <nav className="sticky top-0 text-white z-[11]">
+      <div className="flex justify-between 2xl:max-w-[1280px] mx-auto py-3">
+      <a href="">
+            <img className="w-8" src={images.Logo} alt="" />
+        </a>
+        <ul className="flex items-center gap-6">
+          <li>
           <a href="#Companies" className="hover px-3 py-1 rounded-full">Empresas</a>
+          </li>
+          <li>
           <a href="#Comments" className="hover px-3 py-1 rounded-full">Opiniones</a>
+          </li>
+          <li>
           <a href="" className="hover px-3 py-1 rounded-full">Contacto</a>
-        </div>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
+    
   );
 };
 
