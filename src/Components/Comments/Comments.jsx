@@ -2,12 +2,12 @@ import { Cards,Title } from "../../container";
 import images from "../../constants/images";
 
 const Comments = () => {
-  const comment = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est laborum repellat dolorum inventore eveniet, error unde illo repellendus, atque nostrum odio nisi."
+  const comment = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est laborum repellat dolorum inventore eveniet, error unde illo repellendus."
   return (
-    <div id="comments" className="min-h-[50vh] w-full bg-gradient-to-r from-indigo-500 via-purple-500 via-pink-500 to-orange-700">
-      <div className="px-12 py-6 2xl:px-0 2xl:max-w-[1280px] w-full mx-auto grid grid-cols-2 items-center gap-20">
+    <div id="comments" className="min-h-[50vh] w-full bg-gradient-to-r from-purple-init via-pink-init to-yellow-init">
+      <div className="px-12 py-40 2xl:px-0 2xl:max-w-[1280px] w-full mx-auto grid grid-cols-2 items-center gap-20">
       <div>
-        <Title title={'Que dicen nuestros clientes.'} extraClass={'text-white mb-5'}/>
+        <Title title={'Que dicen nuestros clientes'} extraClass={'text-white mb-5'}/>
         <p className="text-pretty text-lg lg:text-xl text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
           porro quaerat aperiam blanditiis adipisci omnis nemo recusandae.

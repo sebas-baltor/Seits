@@ -4,15 +4,15 @@ import { Title } from "../../container";
 const Companies = () => {
   return (
     <div id="companies" className="py-12">
-      <div className="min-h-[50vh] px-12 py-6 2xl:px-0 2xl:max-w-[1280px] w-full mx-auto flex flex-col justify-center items-center">
+      <div className="px-12 py-40 2xl:px-0 2xl:max-w-[1280px] w-full mx-auto flex flex-col justify-center items-center">
         <div className="mb-12">
-          <Title title={"Empresas."} extraClass={"text-center text-white"} />
+          <Title title={"Empresas"} extraClass={"text-center text-white"} />
         </div>
         <div className="flex gap-6 md:gap-12  flex-wrap items-center justify-evenly w-full">
-          <img src={images.beniplas} alt="beniplas" className="max-h-6 lg:max-h-16 2xl:max-h-32 object-cover" />
-          <img src={images.asfies} alt="beniplas" className="max-h-32 object-cover" />
-          <img src={images.sobetec} alt="beniplas" className="max-h-32 object-cover" />
-          <img src={images.faw} alt="beniplas" className="max-h-32 object-cover" />
+          <img src={images.beniplas} alt="beniplas" className="max-h-16 md:max-h-24 lg:max-h-32 object-cover" />
+          <img src={images.asfies} alt="beniplas" className="max-h-16 md:max-h-24 lg:max-h-32 object-cover" />
+          <img src={images.sobetec} alt="beniplas" className="max-h-16 md:max-h-24 lg:max-h-32 object-cover" />
+          <img src={images.faw} alt="beniplas" className="max-h-16 md:max-h-24 lg:max-h-32 object-cover" />
         </div>
       </div>
     </div>

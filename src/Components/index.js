@@ -4,6 +4,7 @@ import Companies from "./Companies/Companies.jsx";
 import Comments from "./Comments/Comments.jsx";
 import Contact from "./Contact/Contact.jsx";
 import Footer from "./Footer/Footer.jsx";
+import Solutions from "./Solutions/Solutions.jsx";
 
 export {
     Navbar,
@@ -12,4 +13,5 @@ export {
     Comments,
     Contact,
     Footer,
+    Solutions
 }

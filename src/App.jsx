@@ -1,13 +1,14 @@
 
-import { Navbar, Main, Companies, Comments, Contact, Footer } from "./Components"
+import { Navbar, Main, Companies, Comments, Contact, Footer,Solutions } from "./Components"
 
 const App = () => {
   return (
     <>
       <Navbar />
       <Main />
-      <Companies />
+      <Solutions />
       <Comments />
+      <Companies />
       <Contact />
       <Footer />
     </>

@@ -6,15 +6,25 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundColor: {
-        'black_primary': '#000000',
-        'purple_init': '#561DC2',
-        'pink_init': '#C958C8',
-        'yellow_init': '#F29F62',
+      colors: {
+        'black-primary': '#000000',
+        'purple-init': '#561DC2',
+        'pink-init': '#C958C8',
+        'yellow-init': '#F29F62',
         'transparent' : "#ffffff00"
       },
       fontFamily:{
         poppins: ["Poppins","sans-serif"]
+      },
+      keyframes: {
+        rotation: {
+          '0%': { transform: 'rotate(0deg)' },
+          '50%':{transform: 'rotate(180deg)'},
+          '100%': { transform: 'rotate(360deg)'},
+        }
+      },
+      animation: {
+        ratation: 'rotation 5s linear infinite',
       }
     },
   },
