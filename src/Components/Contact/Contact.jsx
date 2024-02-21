@@ -1,5 +1,6 @@
 import { Title } from "../../container";
 import { Formik, Field, Form } from 'formik';
+import Blob from "../../container/Blob/Blob"
 
 const Contact = () => {
   return (
@@ -21,17 +22,17 @@ const Contact = () => {
         >
           <Form className="flex flex-col items-center gap-6 w-1/2 mx-auto">
             <label htmlFor="name" className="text-bold flex flex-col w-full">
-              <span className="tracking-wider text-zinc-400">Nombre:</span>
-              <Field id="name" name="name" placeholder="Steban" className="italic placeholder:text-neutral-500 bg-neutral-900 px-6 py-3 outline-none rounded-lg text-zinc-400 shadow-sm focus:bg-zinc-800" />
+              <span className="tracking-wider text-white">Nombre:</span>
+              <Field id="name" name="name" placeholder="Steban" className="italic placeholder:text-neutral-300 isolate rounded-r-2xl bg-white/30 ring-1 ring-black/5 px-6 py-3 outline-none rounded-lg text-white shadow-sm focus:bg-zinc-800" />
             </label>
 
             <label htmlFor="budget" className="text-bold flex flex-col w-full">
-              <span className="tracking-wider text-zinc-400">
+              <span className="tracking-wider text-white">
                 Presupuesto:
               </span>
 
               <Field id="budget" name="budget" placeholder="Hernandez"
-                as="select" className="italic placeholder:text-neutral-500 bg-neutral-900 px-6 py-3 outline-none rounded-lg text-zinc-400 shadow-sm focus:bg-zinc-800"
+                as="select" className="italic placeholder:text-neutral-300 isolate rounded-r-2xl bg-white/20 ring-1 ring-black/5 px-6 py-3 outline-none rounded-lg text-white shadow-sm focus:bg-zinc-800"
               >
                 <option value="5000" className="italic">Menos de 7,000</option>
                 <option value="10,000">Mas de 10,000</option>
@@ -40,17 +41,17 @@ const Contact = () => {
             </label>
 
             <label htmlFor="email" className="text-bold flex flex-col w-full">
-              <span className="tracking-wider text-zinc-400">Email:</span>
+              <span className="tracking-wider text-white">Email:</span>
               <Field
                 id="email"
                 name="email"
                 placeholder="steban@empresa.com"
                 type="email"
-                className="italic placeholder:text-neutral-500 bg-neutral-900 px-6 py-3 outline-none rounded-lg text-zinc-400 shadow-sm focus:bg-zinc-800"
+                className="italic placeholder:text-neutral-300 isolate rounded-r-2xl bg-white/20 ring-1 ring-black/5 px-6 py-3 outline-none rounded-lg text-white shadow-sm focus:bg-zinc-800"
               />
             </label>
             <label htmlFor="about" className="text-bold flex flex-col w-full">
-              <span className="tracking-wider text-zinc-400">
+              <span className="tracking-wider text-white">
                 Cuentanos mas:
               </span>
               <Field
@@ -59,13 +60,19 @@ const Contact = () => {
                 name="about"
                 placeholder="Cuentanos mas sobre tu proyecto."
                 type="about"
-                className="italic placeholder:text-neutral-500 bg-neutral-900 px-6 py-3 outline-none rounded-lg text-zinc-400 shadow-sm focus:bg-zinc-800"
+                className="italic placeholder:text-neutral-300 isolate rounded-r-2xl bg-white/20 ring-1 ring-black/5 px-6 py-3 outline-none rounded-lg text-white shadow-sm focus:bg-zinc-800"
               />
             </label>
             <button type="submit" className="px-6 py-3 rounded-full bg-pink-200 uppercase bg-gradient-to-r from-indigo-500 via-purple-500 via-pink-500 to-amber-700 shadow-sm">Submit</button>
           </Form>
         </Formik>
-        <div className="absolute w-full h-[40vw] rounded-full inset-x-1/2 -translate-x-1/2 translate-y-[-80%] z-[-10] blur-3xl bg-gradient-to-t from-indigo-500 via-purple-500 via-pink-500 to-orange-700"></div>
+        <div className="absolute w-[50vw] h-[40vw] rounded-full right-0 top-0 translate-y-[-30%] z-[-10] blur-3xl bg-gradient-to-t from-indigo-500 via-purple-500 via-pink-500 to-orange-700">
+        </div>
+        <div className="absolute w-[50vw] h-[40vw] rounded-full end-0 left-0 -translate-x-2/3 translate-y-[90%] z-[-10] blur-3xl bg-gradient-to-t from-indigo-500 via-purple-500 via-pink-500 to-orange-700">
+        </div>
+        {/* <div className="absolute z-[-1] w-full h-full blur-lg">
+          <Blob />
+        </div> */}
       </div>
     </div>
   );
