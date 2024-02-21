@@ -9,9 +9,10 @@
 body{
   font-family: 'Montserrat', sans-serif;
   background-color: #06000a;
+  scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   height: 5px;
   width: 5px;
   background: #F5F8FF;
@@ -24,4 +25,4 @@ body{
 
 ::-webkit-scrollbar-corner {
   background: #BDFF00;
-}
+} */
