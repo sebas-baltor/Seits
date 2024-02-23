@@ -3,8 +3,8 @@ import { Title } from "../../container";
 
 const Companies = () => {
   return (
-    <div id="companies" className="py-12">
-      <div className="px-12 py-40 2xl:px-0 2xl:max-w-[1280px] w-full mx-auto flex flex-col justify-center items-center">
+    <div>
+      <div id="companies" className="px-12 py-40 2xl:px-0 2xl:max-w-[1280px] w-full mx-auto flex flex-col justify-center items-center">
         <div className="mb-12">
           <Title title={"Empresas"} extraClass={"text-center text-white"} />
         </div>
