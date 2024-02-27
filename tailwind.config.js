@@ -14,7 +14,8 @@ export default {
         'transparent' : "#ffffff00"
       },
       fontFamily:{
-        poppins: ["Poppins","sans-serif"]
+        poppins: ["Poppins","sans-serif"],
+        raleway: ["Raleway", "Poppins", "sans-serif"]
       },
       keyframes: {
         rotation: {
