@@ -11,18 +11,18 @@ const Navbar = () => {
         <ul className="flex items-center gap-6">
         
           <li>
-            <a href="#testimonial" className="px-3 py-1 rounded-full text-neutral-400 hover:text-neutral-200">
+            <a href="#testimonial" className="px-3 py-1 rounded-full text-neutral-300 hover:text-neutral-200">
               Testimonios
             </a>
           </li>
           
           <li>
-            <a href="#contact" className="px-3 py-1 rounded-full text-neutral-400 hover:text-neutral-200">
+            <a href="#contact" className="px-3 py-1 rounded-full text-neutral-300 hover:text-neutral-200">
               Contacto
             </a>
           </li>
           <li>
-            <a href="#home" className="px-3 py-1 rounded-full text-neutral-400 hover:text-neutral-200 bg-gradient-to-t from-white/10 to-black/10 hover:from-white/15 hover:via-white/10 hover:to-black/5 ring-1 ring-white/10">
+            <a href="#home" className="px-3 py-1 rounded-full text-neutral-300 hover:text-neutral-200 bg-gradient-to-t from-white/10 to-black/10 hover:from-white/15 hover:via-white/10 hover:to-black/5 ring-1 ring-white/10">
               Home
             </a>
           </li>
