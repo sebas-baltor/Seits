@@ -29,9 +29,15 @@ const Contact = () => {
               email:Yup.string().email("correo invalido").required("campo requerido"),
               about:Yup.string().max(450,"solo se permiten 450 caracteres").required("campo requerido")
             })} 
-            onSubmit={async (values) => {
-              // await new Promise((r) => setTimeout(r, 500));
-              alert(JSON.stringify(values, null, 2));
+            onSubmit={(values,{resetForm}) => {
+              fetch("http://localhost:3000/v1/email/store",{
+                method: "POST",
+                headers:{
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(values)
+              }).then(res => res.json()).then(json=>{console.log(json); resetForm()}).catch(error=> console.error(error))
+
             }}
           >
             <Form className="flex flex-col items-center gap-3 w-full md:w-2/3 lg:w-1/2 px-6 mx-auto">
