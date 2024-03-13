@@ -4,7 +4,7 @@ const Cards = ({ image, name, possition, comment, extraClass }) => {
     <>
       <div className={`${extraClass}`}>
         <div>
-          <div className="w-full h-full flex flex-wrap justify-evenly gap-6 p-6 items-center isolate bg-gradient-to-tr from-black/15 via-black/5 to-black/15 shadow-xl ring-1 ring-black/15 backdrop-blur-md rounded-xl">
+          <div className="w-full h-full flex lg:flex-nowrap flex-wrap justify-evenly gap-6 p-6 items-center isolate bg-gradient-to-tr from-black/15 via-black/5 to-black/15 shadow-xl ring-1 ring-black/15 backdrop-blur-md rounded-xl">
             <div className="max-w-1/3 flex flex-col gap-3 items-center justify-center">
               <div className="relative w-[80px] lg:w-[100px] flex items-center justify-center">
                 <img

@@ -5,11 +5,12 @@ import * as Yup from "yup";
 
 const Contact = () => {
   return (
-    <section
-      id="contact"
-      className="py-40 text-white flex flex-col justify-center items-center px-12 overflow-x-hidden"
-    >
-      <div className="relative">
+    <>
+
+      <section
+        id="contact"
+        className="relative py-40 h-sreen text-white flex justify-center items-center px-12 "
+      >
         <div className="z-[10] flex flex-col gap-8 py-6 rounded-xl isolate bg-gradient-to-tr from-white/15 to-black/10 shadow-xl ring-1 ring-white/15 backdrop-blur-md">
           <Title title="¡Contáctanos!" extraClass={"text-center"} />
           <p className="px-6 w-full md:w-2/3 lg:w-1/2 mx-auto text-center text-neutral-300">
@@ -24,19 +25,19 @@ const Contact = () => {
               about: "",
             }}
             validationSchema={Yup.object({
-              name:Yup.string().required("campo requerido"),
-              budget:Yup.string("opcion invalida").required("selecciona una opcion"),
-              email:Yup.string().email("correo invalido").required("campo requerido"),
-              about:Yup.string().max(450,"solo se permiten 450 caracteres").required("campo requerido")
-            })} 
-            onSubmit={(values,{resetForm}) => {
-              fetch("http://localhost:3000/v1/email/store",{
+              name: Yup.string().required("campo requerido"),
+              budget: Yup.string("opcion invalida").required("selecciona una opcion"),
+              email: Yup.string().email("correo invalido").required("campo requerido"),
+              about: Yup.string().max(450, "solo se permiten 450 caracteres").required("campo requerido")
+            })}
+            onSubmit={(values, { resetForm }) => {
+              fetch("http://localhost:3000/v1/email/store", {
                 method: "POST",
-                headers:{
+                headers: {
                   "Content-Type": "application/json",
                 },
                 body: JSON.stringify(values)
-              }).then(res => res.json()).then(json=>{console.log(json); resetForm()}).catch(error=> console.error(error))
+              }).then(res => res.json()).then(json => { console.log(json); resetForm() }).catch(error => console.error(error))
 
             }}
           >
@@ -49,7 +50,7 @@ const Contact = () => {
                   placeholder="Esteban"
                   className="rounded-xl isolate bg-slate-200/10 shadow-xl ring-1 ring-black/5 backdrop-blur-md px-6 py-3 outline-none rounded-md placeholder:text-neutral-300 text-neutral-300 shadow-sm border border-neutral-600 hover:bg-black/10 focus:bg-black/10"
                 />
-                <ErrorMessage name="name" component="span" className="text-red-500 text-sm"/>
+                <ErrorMessage name="name" component="span" className="text-red-500 text-sm" />
               </label>
 
               <label
@@ -77,7 +78,7 @@ const Contact = () => {
                     Mas de 15,000
                   </option>
                 </Field>
-                <ErrorMessage name="budget" component="span" className="text-red-500 text-sm"/>
+                <ErrorMessage name="budget" component="span" className="text-red-500 text-sm" />
               </label>
 
               <label htmlFor="email" className="text-bold flex flex-col w-full">
@@ -89,7 +90,7 @@ const Contact = () => {
                   type="email"
                   className="rounded-xl isolate bg-slate-200/10 shadow-xl ring-1 ring-black/5 backdrop-blur-md px-6 py-3 outline-none rounded-md placeholder:text-neutral-300 text-neutral-300 shadow-sm border border-neutral-600 hover:bg-black/10 focus:bg-black/10"
                 />
-                <ErrorMessage name="email" component="span" className="text-red-500 text-sm"/>
+                <ErrorMessage name="email" component="span" className="text-red-500 text-sm" />
               </label>
               <label htmlFor="about" className="text-bold flex flex-col w-full">
                 <span className="tracking-wider text-neutral-300">
@@ -104,7 +105,7 @@ const Contact = () => {
                   rows="6"
                   className="rounded-xl isolate bg-slate-200/10 shadow-xl ring-1 ring-black/5 backdrop-blur-md px-6 py-3 outline-none rounded-md placeholder:text-neutral-300 text-neutral-300 shadow-sm border border-neutral-600 hover:bg-black/10 focus:bg-black/10"
                 />
-                <ErrorMessage name="about" component="span" className="text-red-500 text-sm"/>
+                <ErrorMessage name="about" component="span" className="text-red-500 text-sm" />
               </label>
               <button
                 type="submit"
@@ -115,14 +116,20 @@ const Contact = () => {
             </Form>
           </Formik>
         </div>
-        <div className="z-[-2] absolute top-0 right-0 translate-x-1/2 -translate-y-1/2">
+
+        {/* <div className="z-[-2] absolute top-0 right-0 translate-x-1/2 -translate-y-1/2">
           <Spline scene="https://prod.spline.design/75yBKrIAeybNReyZ/scene.splinecode"/>
         </div>
         <div className="z-[-3] absolute rounded-full bottom-0 left-0 -translate-x-1/2 translate-y-1/2">
-          {/* <Spline scene="https://prod.spline.design/NTU7vn-Cmpa07VHz/scene.splinecode" /> */}
+          <Spline scene="https://prod.spline.design/NTU7vn-Cmpa07VHz/scene.splinecode" />
+        </div> */}
+
+
+        <div className="z-[-1] absolute w-[100%] h-[150vh]">
+          <Spline scene="https://prod.spline.design/Rfd08kNT7qTpFx09/scene.splinecode" />
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

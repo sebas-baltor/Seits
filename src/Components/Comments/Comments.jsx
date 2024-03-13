@@ -9,13 +9,13 @@ const Comments = () => {
       <div>
         <Title title={'Testimonios de Clientes Satisfechos'} extraClass={'text-white mb-6 text-start'}/>
         <p className="text-pretty text-lg lg:text-xl text-white text-start">
-        En Dapec, nos enorgullece el éxito y la satisfacción de nuestros clientes. Aquí te presentamos algunas de las experiencias que han compartido con nosotros:
+        En Dapec, nos enorgullece el éxito y la satisfacción de nuestros clientes. Estas son algunas de las experiencias que han compartido con nosotros:
         </p>
       </div>
-      <div className="grid grid-rows-1 lg:grid-rows-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-6 items-center">
-        <Cards image={images.Person_1} name="John Doe" possition="Enginner" comment={comment} extraClass={" lg:self-end"}/>
-        <Cards image={images.Person_2} name="Jena Doe" possition="Enginner"  comment={comment} extraClass={" lg:self-end"}/>
-        <Cards image={images.Person_3} name="Michel Felps" possition="Enginner"  comment={comment}  extraClass={"lg:col-span-2"}/>
+      <div className="grid grid-rows-1 grid-cols-1 md:grid-cols-3 lg:grid-cols-1 gap-6 items-center">
+        <Cards image={images.Person_1} name="John Doe" possition="Enginner" comment={comment} />
+        <Cards image={images.Person_2} name="Jena Doe" possition="Enginner"  comment={comment} />
+        <Cards image={images.Person_3} name="Michel Felps" possition="Enginner"  comment={comment}/>
       </div>
       </div>
     </section>
