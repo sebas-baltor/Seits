@@ -7,7 +7,7 @@ const App = () => {
       <Navbar />
       <Main />
       <Solutions />
-      <Comments />
+      {/* <Comments /> */}
       <Companies />
       <Contact />
       <Footer />

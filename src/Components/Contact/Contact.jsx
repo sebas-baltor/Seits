@@ -11,9 +11,9 @@ const Contact = () => {
         id="contact"
         className="relative py-40 h-sreen text-white flex justify-center items-center px-12 "
       >
-        <div className="z-[10] flex flex-col gap-8 py-6 rounded-xl isolate bg-gradient-to-tr from-white/15 to-black/10 shadow-xl ring-1 ring-white/15 backdrop-blur-md">
+        <div className="z-[10] flex flex-col gap-8 py-12 px-12 lg:px-24 rounded-xl isolate bg-gradient-to-tr from-white/10 to-black/5 shadow-xl ring-1 ring-white/10 backdrop-blur-md">
           <Title title="¡Contáctanos!" extraClass={"text-center"} />
-          <p className="px-6 w-full md:w-2/3 lg:w-1/2 mx-auto text-center text-neutral-300">
+          <p className="px-6 w-full md:w-2/3 mx-auto text-center text-neutral-300">
             ¿Tienes alguna pregunta, solicitud de información o simplemente
             deseas ponerte en contacto con nosotros?
           </p>
@@ -41,13 +41,12 @@ const Contact = () => {
 
             }}
           >
-            <Form className="flex flex-col items-center gap-3 w-full md:w-2/3 lg:w-1/2 px-6 mx-auto">
+            <Form className="flex flex-col items-center gap-3 w-full md:w-2/3 px-6 mx-auto">
               <label htmlFor="name" className="text-bold flex flex-col w-full">
                 <span className="tracking-wider text-neutral-300">Nombre:</span>
                 <Field
                   id="name"
                   name="name"
-                  placeholder="Esteban"
                   className="rounded-xl isolate bg-slate-200/10 shadow-xl ring-1 ring-black/5 backdrop-blur-md px-6 py-3 outline-none rounded-md placeholder:text-neutral-300 text-neutral-300 shadow-sm border border-neutral-600 hover:bg-black/10 focus:bg-black/10"
                 />
                 <ErrorMessage name="name" component="span" className="text-red-500 text-sm" />
@@ -86,7 +85,6 @@ const Contact = () => {
                 <Field
                   id="email"
                   name="email"
-                  placeholder="esteban@empresa.com"
                   type="email"
                   className="rounded-xl isolate bg-slate-200/10 shadow-xl ring-1 ring-black/5 backdrop-blur-md px-6 py-3 outline-none rounded-md placeholder:text-neutral-300 text-neutral-300 shadow-sm border border-neutral-600 hover:bg-black/10 focus:bg-black/10"
                 />
@@ -100,7 +98,6 @@ const Contact = () => {
                   as="textarea"
                   id="about"
                   name="about"
-                  placeholder="Como podemos ayudarte?"
                   type="about"
                   rows="6"
                   className="rounded-xl isolate bg-slate-200/10 shadow-xl ring-1 ring-black/5 backdrop-blur-md px-6 py-3 outline-none rounded-md placeholder:text-neutral-300 text-neutral-300 shadow-sm border border-neutral-600 hover:bg-black/10 focus:bg-black/10"
@@ -109,7 +106,7 @@ const Contact = () => {
               </label>
               <button
                 type="submit"
-                className="mt-6 text-white text-md 2xl:text-lg px-6 py-1 lg:py-2 rounded-full uppercase bg-gradient-to-r from-purple-init via-pink-init to-yellow-init shadow-sm hover:bg-gradient-to-tr ease-in transition-all"
+                className="mt-6 text-white text-md 2xl:text-lg px-6 py-1 rounded-full uppercase bg-gradient-to-r from-purple-init via-pink-init to-yellow-init shadow-sm hover:bg-gradient-to-tr ease-in transition-all"
               >
                 enviar
               </button>

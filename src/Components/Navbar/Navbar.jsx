@@ -11,10 +11,15 @@ const Navbar = () => {
         <ul className="flex items-center gap-6">
         
           <li>
+            <a href="#companies" className="px-3 py-1 rounded-full text-neutral-300 hover:text-neutral-200">
+              Empresas
+            </a>
+          </li>
+          {/* <li>
             <a href="#testimonial" className="px-3 py-1 rounded-full text-neutral-300 hover:text-neutral-200">
               Testimonios
             </a>
-          </li>
+          </li> */}
           
           <li>
             <a href="#contact" className="px-3 py-1 rounded-full text-neutral-300 hover:text-neutral-200">
